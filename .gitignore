@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+
+# Logs
+logs
+*.log
+
+# Docker
+.docker/
+docker-compose.override.yml
+*.pid
+
+# Airflow
+airflow/__pycache__/
+airflow/logs/*
+airflow/dags/__pycache__/
+airflow/*.db
+
+# Data
+data/*
+*.parquet
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# GitHub Actions
+.github/workflows/*.log
+
+# PySpark
+spark-warehouse/
+metastore_db/

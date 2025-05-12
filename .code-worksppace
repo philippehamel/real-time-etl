@@ -1,0 +1,33 @@
+{
+    "folders": [
+        {
+            "path": "src"
+        },
+        {
+            "path": "airflow/dags"
+        }
+    ],
+    "settings": {
+        "python.defaultInterpreterPath": "your-python-interpreter-path",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.linting.flake8Enabled": true,
+        "python.linting.mypyEnabled": true,
+        "python.formatting.provider": "black",
+        "python.testing.pytestEnabled": true,
+        "python.testing.pytestArgs": ["src/tests"],
+        "python.analysis.typeCheckingMode": "basic",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true
+        },
+        "docker.showExplorer": true,
+        "yaml.format.enable": true,
+        "yaml.schemas": {
+            "https://json.schemastore.org/github-action.json": ".github/workflows/*",
+            "https://json.schemastore.org/docker-compose.json": "docker-compose.yml"
+        },
+        "github-actions.prettifyYaml": true,
+        "github-actions.validateYaml": true
+    }
+}
